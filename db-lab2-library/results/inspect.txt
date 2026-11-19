@@ -1,0 +1,283 @@
+FILE: inspect.sql
+[
+  {
+    "table_name": "author",
+    "rows": "5"
+  },
+  {
+    "table_name": "authorship",
+    "rows": "6"
+  },
+  {
+    "table_name": "copy",
+    "rows": "8"
+  },
+  {
+    "table_name": "edition",
+    "rows": "6"
+  },
+  {
+    "table_name": "loan",
+    "rows": "10"
+  },
+  {
+    "table_name": "reader",
+    "rows": "6"
+  }
+]
+[
+  {
+    "author_id": 1,
+    "given_name": "Леся",
+    "family_name": "Українка",
+    "pen_name": null
+  },
+  {
+    "author_id": 2,
+    "given_name": "Іван",
+    "family_name": "Франко",
+    "pen_name": null
+  },
+  {
+    "author_id": 3,
+    "given_name": "Тарас",
+    "family_name": "Шевченко",
+    "pen_name": null
+  },
+  {
+    "author_id": 4,
+    "given_name": "Ольга",
+    "family_name": "Кобилянська",
+    "pen_name": null
+  },
+  {
+    "author_id": 5,
+    "given_name": null,
+    "family_name": null,
+    "pen_name": "Мандрівник"
+  }
+]
+[
+  {
+    "edition_id": 1,
+    "title": "Лісова пісня",
+    "language": "uk",
+    "publication_year": 2020,
+    "publisher_name": "Навчальна книга"
+  },
+  {
+    "edition_id": 2,
+    "title": "Захар Беркут",
+    "language": "uk",
+    "publication_year": 2021,
+    "publisher_name": "Навчальна книга"
+  },
+  {
+    "edition_id": 3,
+    "title": "Кобзар",
+    "language": "uk",
+    "publication_year": 2019,
+    "publisher_name": "Класика"
+  },
+  {
+    "edition_id": 4,
+    "title": "Земля",
+    "language": "uk",
+    "publication_year": 2022,
+    "publisher_name": "Класика"
+  },
+  {
+    "edition_id": 5,
+    "title": "Дорожні нотатки",
+    "language": "uk",
+    "publication_year": 2023,
+    "publisher_name": "Обрій"
+  },
+  {
+    "edition_id": 6,
+    "title": "Збірник народних казок",
+    "language": "uk",
+    "publication_year": null,
+    "publisher_name": null
+  }
+]
+[
+  {
+    "author_id": 1,
+    "edition_id": 1
+  },
+  {
+    "author_id": 2,
+    "edition_id": 2
+  },
+  {
+    "author_id": 2,
+    "edition_id": 5
+  },
+  {
+    "author_id": 3,
+    "edition_id": 3
+  },
+  {
+    "author_id": 4,
+    "edition_id": 4
+  },
+  {
+    "author_id": 5,
+    "edition_id": 5
+  }
+]
+[
+  {
+    "inventory_number": 101,
+    "edition_id": 1
+  },
+  {
+    "inventory_number": 102,
+    "edition_id": 1
+  },
+  {
+    "inventory_number": 201,
+    "edition_id": 2
+  },
+  {
+    "inventory_number": 202,
+    "edition_id": 2
+  },
+  {
+    "inventory_number": 301,
+    "edition_id": 3
+  },
+  {
+    "inventory_number": 401,
+    "edition_id": 4
+  },
+  {
+    "inventory_number": 501,
+    "edition_id": 5
+  },
+  {
+    "inventory_number": 601,
+    "edition_id": 6
+  }
+]
+[
+  {
+    "reader_id": 1,
+    "given_name": "Олена",
+    "family_name": "Тестова",
+    "phone": "+380000000001"
+  },
+  {
+    "reader_id": 2,
+    "given_name": "Олег",
+    "family_name": "Приклад",
+    "phone": "+380000000002"
+  },
+  {
+    "reader_id": 3,
+    "given_name": "Марія",
+    "family_name": "Демонстраційна",
+    "phone": "+380000000003"
+  },
+  {
+    "reader_id": 4,
+    "given_name": "Ірина",
+    "family_name": "Тестова",
+    "phone": "+380000000001"
+  },
+  {
+    "reader_id": 5,
+    "given_name": "Олена",
+    "family_name": "Тестова",
+    "phone": "+380000000001"
+  },
+  {
+    "reader_id": 6,
+    "given_name": "Петро",
+    "family_name": "Навчальний",
+    "phone": "+380000000006"
+  }
+]
+[
+  {
+    "loan_id": 1,
+    "reader_id": 1,
+    "inventory_number": 101,
+    "issued_on": "2026-09-01",
+    "due_on": "2026-09-15",
+    "returned_on": "2026-09-10"
+  },
+  {
+    "loan_id": 2,
+    "reader_id": 2,
+    "inventory_number": 101,
+    "issued_on": "2026-09-10",
+    "due_on": "2026-09-24",
+    "returned_on": "2026-09-26"
+  },
+  {
+    "loan_id": 3,
+    "reader_id": 1,
+    "inventory_number": 102,
+    "issued_on": "2026-09-02",
+    "due_on": "2026-09-16",
+    "returned_on": "2026-09-16"
+  },
+  {
+    "loan_id": 4,
+    "reader_id": 3,
+    "inventory_number": 201,
+    "issued_on": "2026-09-05",
+    "due_on": "2026-09-19",
+    "returned_on": "2026-09-05"
+  },
+  {
+    "loan_id": 5,
+    "reader_id": 4,
+    "inventory_number": 301,
+    "issued_on": "2026-09-10",
+    "due_on": "2026-09-24",
+    "returned_on": "2026-09-27"
+  },
+  {
+    "loan_id": 6,
+    "reader_id": 2,
+    "inventory_number": 401,
+    "issued_on": "2026-10-01",
+    "due_on": "2026-10-15",
+    "returned_on": "2026-10-14"
+  },
+  {
+    "loan_id": 7,
+    "reader_id": 3,
+    "inventory_number": 501,
+    "issued_on": "2026-10-03",
+    "due_on": "2026-10-17",
+    "returned_on": "2026-10-20"
+  },
+  {
+    "loan_id": 8,
+    "reader_id": 1,
+    "inventory_number": 101,
+    "issued_on": "2026-10-10",
+    "due_on": "2026-10-24",
+    "returned_on": null
+  },
+  {
+    "loan_id": 9,
+    "reader_id": 1,
+    "inventory_number": 102,
+    "issued_on": "2026-10-15",
+    "due_on": "2026-10-29",
+    "returned_on": null
+  },
+  {
+    "loan_id": 10,
+    "reader_id": 5,
+    "inventory_number": 601,
+    "issued_on": "2026-10-05",
+    "due_on": "2026-10-19",
+    "returned_on": "2026-10-10"
+  }
+]

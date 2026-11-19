@@ -1,0 +1,6 @@
+{
+  "name": "library-sql-labs",
+  "private": true,
+  "scripts": { "verify": "node verify.cjs", "sql": "node run.cjs" },
+  "dependencies": { "pg": "8.16.3" }
+}

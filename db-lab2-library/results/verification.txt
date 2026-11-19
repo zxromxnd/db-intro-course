@@ -1,0 +1,26 @@
+PASS rows author: 5
+PASS rows edition: 6
+PASS rows authorship: 6
+PASS rows copy: 8
+PASS rows reader: 6
+PASS rows loan: 10
+PASS negative ID
+PASS empty phone
+PASS NULL phone
+PASS nameless author
+PASS duplicate authorship
+PASS unknown edition
+PASS deadline before issue
+PASS return before issue
+PASS second active loan
+PASS historical overlap
+PASS same-day inside old loan
+PASS edition without copy
+PASS author without authorship
+PASS last copy removed
+PASS last copy minimum
+PASS last authorship removed
+PASS reader history protected
+PASS same-day return, reissue and late return
+PASS concurrent issue waits on copy lock
+TOTAL PASS: 25
